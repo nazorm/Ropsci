@@ -1,6 +1,6 @@
 
-
-
+var y = document.querySelector(".pageTwo");
+var x = document.querySelector(".rulesNav");
 
 
 function myBtn(){
@@ -89,6 +89,11 @@ else if (index == 2 && houseOption == 2){
     playAgain.innerHTML = "Play Again"
 }
 
-console.log(score)
 }
+
+function goback(){
+x.remove();
+y.remove();
+}
+
 
