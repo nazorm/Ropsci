@@ -52,13 +52,13 @@ else if (index == 0 && houseOption == 1){
 }
 
 else if (index == 0 && houseOption == 2){
-    score.innerHTML += 1;
+    score.innerText = Number(score.innerText + 1);
      verdict.innerHTML ="You Win"
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 1 && houseOption == 0){
-    score.innerHTML += 1;
+    score.innerText = Number(score.innerText + 1);
     verdict.innerHTML ="You Win"
     playAgain.innerHTML = "Play Again"
 } 
@@ -79,7 +79,7 @@ else if (index == 2 && houseOption == 0){
 }
 
 else if (index == 2 && houseOption == 1){
-    score.innerHTML += 1;
+    score.innerText = Number(score.innerText + 1);
    verdict.innerHTML ="You Win"
     playAgain.innerHTML = "Play Again"
 }
@@ -91,9 +91,9 @@ else if (index == 2 && houseOption == 2){
 
 }
 
-function goback(){
-x.remove();
-y.remove();
-}
 
+function goback(){
+    y.style.display = "none"
+    x.style.display = "none"
+}
 

@@ -1,87 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-<link rel="stylesheet" href="./ropsci.css">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section class="container">
-  <div class="rulesNav">
-<div class="rules">
-  <div class="desktoprule">
-  <h1>Rules</h1>
-  <img src="./i/icon-close.svg" alt="end" class="desktopclose" onclick="goback()">
-</div>
-<img src="./i/image-rules.svg" alt="rules"><br>
-<img src="./i/icon-close.svg" alt="close" class="close" onclick="goback()">
-</div>
-</div>
-<section class="pages">
-  <div class="fixedHead">
-    <img src="./i/logo.svg" alt="logo" class="logo">
-    <span>
-     <h4>score</h4>
-     <p class="fixedHeadP"></p>
-    </span>
-     </div>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-     <section class="mobilePageOne">
-       
-        <img src="./i/bg-triangle.svg" alt="triangle" class="triangle">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./ropsci.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="rulesNav">
+        <div class="rules">
+          <div class="desktoprule">
+            <h1>Rules</h1>
+            <img
+              src="./i/icon-close.svg"
+              alt="end"
+              class="desktopclose"
+              onclick="goback()"
+            />
+          </div>
+          <img src="./i/image-rules.svg" alt="rules" /><br />
+          <img
+            src="./i/icon-close.svg"
+            alt="close"
+            class="close"
+            onclick="goback()"
+          />
+        </div>
+      </div>
+      <section class="pages">
+        <div class="fixedHead">
+          <img src="./i/logo.svg" alt="logo" class="logo" />
+          <span>
+            <h4>score</h4>
+            <p class="fixedHeadP"></p>
+          </span>
+        </div>
+
+        <section class="mobilePageOne">
+          <img src="./i/bg-triangle.svg" alt="triangle" class="triangle" />
           <div class="ropsci">
             <span>
               <a href="javascript:void(0);" onclick="options(0)">
-             <img src="./i/icon-paper.svg" alt="paper" class="paper"></a>
-             <a href="javascript:void(0);" onclick="options(1)">
-              <img src="./i/icon-scissors.svg" alt="scissors" class="scissors">
-            </a></span>   <br> 
+                <img src="./i/icon-paper.svg" alt="paper" class="paper"
+              /></a>
+
+              <a href="javascript:void(0);" onclick="options(1)">
+                <img
+                  src="./i/icon-scissors.svg"
+                  alt="scissors"
+                  class="scissors"
+                />
+              </a>
+            </span>
+            <br />
             <a href="javascript:void(0);" onclick="options(2)">
-                <img src="./i/icon-rock.svg" alt="rock" class="rock"></a>
-           </div>
-     </section>
+              <img src="./i/icon-rock.svg" alt="rock" class="rock"
+            /></a>
+          </div>
+        </section>
 
-     <section class="pageTwo">
-       <div class="page2">
-     <div>
-      <nav>
-        <a href="javascript:void(0);" class="choice"> 
-    <img src="./i/icon-paper.svg" alt="yourChoice" class="yourChoice"></a>
-      <h3>You Picked</h3>
-      </nav>
-      <nav>
-        <a href="javascript:void(0);" class="choice"> </a>
-       <img src="./i/icon-scissors.svg" alt="houseChoice" class="houseChoice"></a>
-       <h3>The House Picked</h3>
-      </nav>
-    </div>
-    </div>
+        <section class="pageTwo">
+          <div class="page2">
+            <div>
+              <nav>
+                <a href="javascript:void(0);" class="choice">
+                  <img
+                    src="./i/icon-paper.svg"
+                    alt="yourChoice"
+                    class="yourChoice"
+                /></a>
 
-    <p class="verdict"></p>
-    <button class="playagainBtn" onclick="goback()"></button>
+                <h3>You Picked</h3>
+              </nav>
+              <nav>
+                <a href="javascript:void(0);" class="choice">
+                  <img
+                    src="./i/icon-scissors.svg"
+                    alt="houseChoice"
+                    class="houseChoice"
+                /></a>
+
+                <h3>The House Picked</h3>
+              </nav>
+            </div>
+          </div>
+
+          <p class="verdict"></p>
+          <button class="playagainBtn" onclick="goback()"></button>
+        </section>
+
+        <div class="btn">
+          <a href="javascript:void(0);" onclick="myBtn()">
+            <button class="fixedBottom">Rules</button>
+          </a>
+        </div>
+      </section>
     </section>
-
-
-
-    <div class="btn">
-<a href="javascript:void(0);" onclick="myBtn()" >
-  <button class="fixedBottom">Rules</button>
-</a></div>
-    </section>
-
-  <!---- <footer class="footer">
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/nazorm
-    " target="_blank">Nazorm</a> ------>
-  </div>
-</footer>
-</section>
-<script src="./ropsci.js"></script>
-</body>
+    <script src="./ropsci.js"></script>
+  </body>
 </html>
