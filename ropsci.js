@@ -11,6 +11,12 @@ function myBtn(){
         x.style.display = "block";
     }
 }
+
+function goback(){
+    y.style.display = "none"
+    x.style.display = "none"
+}
+
 var score = document.querySelector(".fixedHeadP");
 var verdict = document.querySelector(".verdict");
 var playAgain = document.querySelector(".playagainBtn");
@@ -92,8 +98,4 @@ else if (index == 2 && houseOption == 2){
 }
 
 
-function goback(){
-    y.style.display = "none"
-    x.style.display = "none"
-}
 
