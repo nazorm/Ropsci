@@ -139,6 +139,17 @@ border-radius: 50%;
 .scissors, .yourChoice{
     border: 8px solid hsl(39, 89%, 49%);
 }
+.yourChoice{
+    animation: bounce 1s ease;
+}
+@keyframes bounce{
+    0%{
+       transform: translateY(0px);
+    }
+    100%{
+     transform: translateY(20px);
+    }
+}
 .paper, .houseChoice{
     border: 8px solid hsl(230, 89%, 62%);
 }
