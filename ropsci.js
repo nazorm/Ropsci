@@ -17,7 +17,9 @@ function goback(){
     x.style.display = "none"
 }
 
-var score = document.querySelector(".fixedHeadP");
+var yourScore = document.querySelector(".yourScore");
+var houseScore = document.querySelector(".houseScore");
+
 var verdict = document.querySelector(".verdict");
 var playAgain = document.querySelector(".playagainBtn");
 var h = document.querySelector(".houseChoice");
@@ -49,49 +51,61 @@ if (index == 0){
 
 if (index == 0 && houseOption == 0){
     verdict.innerHTML ="Match"
+    verdict.style.color = "whitesmoke";
    playAgain.innerHTML = "Play Again"
 } 
 
 else if (index == 0 && houseOption == 1){
     verdict.innerHTML ="You Lose"
+    houseScore.innerText = Number(houseScore.innerText) + 1;
+    verdict.style.color = "red"
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 0 && houseOption == 2){
-    score.innerText = Number(score.innerText) + 1;
+    yourScore.innerText = Number(yourScore.innerText) + 1;
      verdict.innerHTML ="You Win"
+     verdict.style.color = "green";
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 1 && houseOption == 0){
-    score.innerText = Number(score.innerText) + 1;
+    yourScore.innerText = Number(yourScore.innerText) + 1;
     verdict.innerHTML ="You Win"
+    verdict.style.color = "green";
     playAgain.innerHTML = "Play Again"
 } 
 
 else if (index == 1 && houseOption == 1){
     verdict.innerHTML ="Match"
+    verdict.style.color = "whitesmoke";
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 1 && houseOption == 2){
    verdict.innerHTML ="You Lose"
+   houseScore.innerText = Number(houseScore.innerText) + 1;
+   verdict.style.color = "red"
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 2 && houseOption == 0){
    verdict.innerHTML ="You Lose"
+   houseScore.innerText = Number(houseScore.innerText) + 1;
+   verdict.style.color = "red"
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 2 && houseOption == 1){
-    score.innerText = Number(score.innerText) + 1;
+    yourScore.innerText = Number(yourScore.innerText) + 1;
    verdict.innerHTML ="You Win"
+   verdict.style.color = "green";
     playAgain.innerHTML = "Play Again"
 }
 
 else if (index == 2 && houseOption == 2){
     verdict.innerHTML ="Match"
+    verdict.style.color = "whitesmoke";
     playAgain.innerHTML = "Play Again"
 }
 
